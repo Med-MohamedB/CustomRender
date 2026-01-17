@@ -47,9 +47,9 @@ Shows a small status dot near the top-right toolbar. Click it to toggle the plug
 ## Recommended Settings
 
 ### Low-end PCs / laptops
-- startDelayMs: 1200-1800
-- frameBudgetMs: 3-5
-- maxOpsPerFrame: 100-200
+- startDelayMs: 1500-2000
+- frameBudgetMs: 2-4
+- maxOpsPerFrame: 50-100
 
 ### Mid-range PCs
 - startDelayMs: 1000-1500
