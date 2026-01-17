@@ -1,0 +1,16 @@
+{
+  "name": "CustomRender",
+  "description": "Smooths Discord rendering by hiding newly added DOM nodes and revealing them over multiple frames to avoid large UI spikes. Recommended: keep startDelayMs around 1000-1500, frameBudgetMs at 4-8, and maxOpsPerFrame at 150-300 for stable performance on most PCs.",
+  "authors": [
+    {
+      "name": "m7i1",
+      "id": "741416289423065088"
+    },
+    {
+      "name": "jx5_",
+      "id": "1024297429127933952"
+    }
+  ],
+  "version": "1.0.0",
+  "main": "index.ts"
+}
