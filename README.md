@@ -66,3 +66,6 @@ Shows a small status dot near the top-right toolbar. Click it to toggle the plug
 - If the UI feels too slow to appear, increase `maxOpsPerFrame` or `frameBudgetMs`.
 - If you still see stutter, lower `maxOpsPerFrame` and keep `frameBudgetMs` small.
 - Leave `startDelayMs` above 800 to avoid interfering with Discord startup.
+
+## Screenshot
+![1](screenshots/Screenshot_2.png)
