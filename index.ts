@@ -5,7 +5,7 @@
  */
 
 import { definePluginSettings, SettingsStore } from "@api/Settings";
-import { managedStyleRootNode } from "@api/Styles";
+import * as Styles from "@api/Styles";
 import { createAndAppendStyle } from "@utils/css";
 import definePlugin, { makeRange, OptionType, StartAt } from "@utils/types";
 
@@ -79,7 +79,8 @@ let indicatorListener: ((value: boolean) => void) | null = null;
 function ensureStyle() {
     if (styleEl) return;
 
-    styleEl = createAndAppendStyle("dom-vsync-style", managedStyleRootNode);
+    const styleRoot = Styles.managedStyleRootNode ?? Styles.userStyleRootNode ?? document.head;
+    styleEl = createAndAppendStyle("dom-vsync-style", styleRoot as HTMLElement);
     styleEl.textContent = `
 .${PENDING_CLASS} {
     visibility: hidden;
